@@ -1,0 +1,38 @@
+#pragma once
+#include <stdio.h>
+#include <mystd.h>
+
+#define driveC 0x01
+#define driveD 0x02
+#define BasePath $1 "/home/tameron/drives/disk."
+#define Maxdrive 0x02
+
+#define BlockSize 512
+
+typedef int8 block[512];
+
+internal struct sdisk {
+    int32 fd;
+    int16 blocks;
+    int8 driveNo:2;
+} packed;
+typedef struct sdisk disk;
+
+internal disk *dmount(int8);
+internal void  dunmount(disk*);
+internal void dshow(disk*);
+internal int16 openfiles(disk *dd);
+internal void closeallfiles(disk *dd);
+/*
+bool dread(disk *dd, block *addr, int16 blockno);
+bool dwrite(disk *dd, block *addr, int16 blockno);
+*/
+// disk input and output
+#define dio(function,disk,address,bytes)    ( \
+    (disk) && \
+    (lseek($i (disk)->fd, $i (BlockSize*(bytes)), SEEK_SET) != -1) && \
+    (((function)($i (disk)->fd, $c (address), BlockSize) == BlockSize)) \
+)
+
+#define dread(disk,address,bytes) dio(read,disk,address,bytes)
+#define dwrite(disk,address,bytes) dio(write,disk,address,bytes)
