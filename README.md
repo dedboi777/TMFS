@@ -9,8 +9,9 @@ The only requirement to be able to run it is to have GCC installed on your syste
 
 # Execution:
   1- Formatting the disk:
-      . You enter "util" directory and execute the               file in it. It will then provide you with how you          must address the command depending on ceratin              condition.
-      eg: ./osutil format c
+      . You enter "util" directory and execute the file in 			it. It will then provide you with how you must 				address the command depending on ceratin condition.
+        eg: ./osutil format c
+		IMPORTANT NOTE: I only provided a wrapper function 			for formatting, but not for anything else.
   2- Printing information about the disk:
       . 
   3-  Return information about a file:
