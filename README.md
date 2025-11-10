@@ -13,7 +13,7 @@ The C libraries used in this project are built in to Windows, BSD, and most Linu
 . Have GCC installed on your system.
 
 . A disk emulator that satisfies the needs of the filesystem 
-(Tne one provided with the project is called "TMDE", you can
+(The one provided with the project is called "TMDE", you can
 modify it based on your needs or provide one that has the same
 structure).
 
