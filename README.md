@@ -11,6 +11,7 @@ The C libraries used in this project are built in to Windows, BSD, and most Linu
 # Requirements
 
 . Have GCC installed on your system.
+
 . A disk emulator that satisfies the needs of the filesystem 
 (Tne one provided with the project is called "TMDE", you can
 modify it based on your needs or provide one that has the same
@@ -22,6 +23,5 @@ user only has to write the function calls of the features he/she would like to
 experiment(with the required parameters) in "command.c", and then call "make" 
 followed by "./command.com" in the terminal.
 
-
-
+# Thanks
 Thank you for your time and care :)
