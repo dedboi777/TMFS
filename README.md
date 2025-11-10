@@ -7,5 +7,30 @@ The C libraries used in this project are built in to Windows, BSD, and most Linu
 
 The only requirement to be able to run it is to have GCC installed on your system.
 
+# Execution:
+  1- Formatting the disk:
+      . You enter "util" directory and execute the               file in it. It will then provide you with how you          must address the command depending on ceratin              condition.
+      eg: ./osutil format c
+  2- Printing information about the disk:
+      . 
+  3-  Return information about a file:
+      . 
+	4-  Mounting the filesystem:
+      .
+	5-  Unmounting the filesystem:
+      .
+	6-  Creating i-nodes:
+      .
+	7-  Finding i-nodes:
+      .
+	8-  Allocating i-nodes:
+      .
+	9-  Unallocating i-nodes:
+      .
+	10- Saving an i-node:
+      .
+	11-  Making a bitmap:
+      .
+
 
 Thank you for your time and care :)
