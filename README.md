@@ -20,8 +20,8 @@ structure).
 # Execution:
 All the functions are executed in the "execution" directory. And the 
 user only has to write the function calls of the features he/she would like to 
-experiment(with the required parameters) in "command.c", and then call "make" 
-followed by "./command.com" in the terminal.
+experiment(with the required parameters) in "execute.c", and then call "make" 
+followed by "./execute.com" in the terminal.
 
 # Thanks
 Thank you for your time and care :)
